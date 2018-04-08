@@ -100,7 +100,7 @@ class BlockGuard extends Manager implements Listener
 
 		$rname = $region->getRegionName();
 
-		if( strtolower($player->getName()) != $region->getOwner() and !$player->hasPermission('sexguard.all') )
+		if( strtolower($player->getName()) != $region->getOwner() and !$player->isOp())
 		{
 			$api->sendWarning($player, $api->getValue('player_not_owner'));
 			return;
