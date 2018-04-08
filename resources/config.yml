@@ -1,202 +1,202 @@
-###               ____                    _
-#  ____ _____  __/ ___\_   _  __ _ _ ____| |
-# / __// _ \ \/ / /  _| | | |/ _' | '_/ _' |
-# \__ \  __/>  <\ \_| | |_| | (_) | || (_) |
-# /___/\___/_/\_\\____/\___/ \__,_|_| \__,_|
+### ____ _
+# ____ _____ __ / ___ \ _ _ __ _ _ ____ | | |
+# / __ // _ \ \ / / / _ | | | | | | / _ '| '_ / _' |
+# \ __ \ __ /> <\ \ _ | | | | _ | | | | (_) | || (_) |
+# / ___ / \ ___ / _ / \ _ \\ ____ / \ ___ / \ __, _ | _ | \ __, _ |
 #
-#          MAIN CONFIGURATION FILE
+# MAIN CONFIGURATION FILE
 ###
-# АВТОР:   sex_KAMAZ
-# КОНТАКТ: vk.com/infernopage
-#          t.me/sex_kamaz
-# ПОМОЩЬ:  t.me/joinchat/EbZB3BKGfsu0DdbDNmpPjg
+# AUTHOR: sex_KAMAZ
+# CONTACT: vk.com/infernopage
+# t.me/sex_kamaz
+# HELP: t.me/joinchat/EbZB3BKGfsu0DdbDNmpPjg
 ###
-# РАЗРЕШЕНИЯ:
-#   sexguard.command.rg: доступ к основной команде.
-#     по-умолчанию:      для всех игроков.
+# PERMISSIONS:
+# sexguard.command.rg: access to the main command.
+# default: for all players.
 #
-#   sexguard.noflag: возможность игнорировать флаги.
-#     по-умолчанию:  для операторов.
+# sexguard.noflag: the ability to ignore flags.
+# default: for operators.
 #
-#   sexguard.all:   полный доступ.
-#     по-умолчанию: для операторов.
+# sexguard.all: full access.
+# default: for operators.
 ###
-# ДОПОЛНИТЕЛЬНЫЕ ПЛАГИНЫ:
-#   PurePerms:  контроль размера и количества
-#               регионов для групп.
-#   UniGroup:   альтернативный менеджер групп.
-#   EconomyAPI: покупка и продажа регионов.
-#   UniMoney:   альтернативная экономика.
+# ADDITIONAL PLUGINS:
+#PurePerms: control of size and quantity
+# regions for groups.
+# UniGroup: alternative group manager.
+# EconomyAPI: buying and selling regions.
+# UniMoney: alternative economy.
 ###
-# ОШИБКИ В РАБОТЕ ПЛАГИНА?
-#   Убедитесь в том, что случайно
-#   не удалили один из пунктов
-#   настроек.
-#   Для возвращения конфига в его
-#   нормальное состояние просто
-#   удалите его - он восстановится
-#   при включении плагина.
+# ERRORS IN THE WORK OF PLUGIN?
+# Make sure that accidentally
+# did not delete one of the items
+# settings.
+# To return the config to its
+# the normal state is simple
+# delete it - it will be restored
+# when the plug-in is turned on.
 ###
 sign: 5856cd0ba5aac216328752e444c9565c
 
 
 ###
-# СВЯЗЬ С PurePerms:
-#   Разрешить плагину работать с менеджером разрешений
-#   для определения размеров и количества регионов для
-#   каждой (или отдельной) из его групп.
-#   В противном случае будет использоваться
-#   пункт default в group.yml для всех игроков.
-#   Настроить группы можно в group.yml.
+# COMMUNICATION WITH PurePerms:
+# Allow the plug-in to work with the permissions manager
+# to determine the size and number of regions for
+# each (or separate) of its groups.
+# Otherwise, it will be used
+# item default in group.yml for all players.
+# You can configure groups in group.yml.
 ###
-# РАЗРЕШИТЬ: true
-# ЗАПРЕТИТЬ: false
+# AUTHORIZED: true
+#BALD: false
 allow_pureperms: false
 ###
-# СВЯЗЬ С UniGroup:
-#   Разрешить плагину работать с альтернативным
-#   менеджером групп.
+# COMMUNICATION WITH UniGroup:
+# Allow the plug-in to work with an alternative
+# group manager.
 ###
-# РАЗРЕШИТЬ: true
-# ЗАПРЕТИТЬ: false
+# AUTHORIZED: true
+#BALD: false
 allow_universalgroup: false
 
 
 ###
-# СВЯЗЬ С EconomyAPI:
-#   Разрешить плагину работать с экономикой
-#   для возможности продажи регионов.
-#   Актуально для roleplay и survival.
+# COMMUNICATION WITH EconomyAPI:
+# Allow the plug-in to work with the economy
+# for sale of regions.
+# Actual for roleplay and survival.
 ###
-# РАЗРЕШИТЬ: true
-# ЗАПРЕТИТЬ: false
+# AUTHORIZED: true
+#BALD: false
 allow_economyapi: false
 ###
-# СВЯЗЬ С UniMoney:
-#   Разрешить плагину работать с альтернативной
-#   экономикой.
+# COMMUNICATION WITH UNIMoney:
+# Allow the plug-in to work with an alternative
+# economy.
 ###
-# РАЗРЕШИТЬ: true
-# ЗАПРЕТИТЬ: false
+# AUTHORIZED: true
+#BALD: false
 allow_universalmoney: false
 ###
-# ПРОДАЖА РЕГИОНА ЧЕРЕЗ ТАБЛИЧКУ:
-# (требуется связь с экономикой)
-#   Разрешить владельцам продавать
-#   свои регионы через табличку.
-#   Актуально для создания квартир.
+# SALE OF THE REGION THROUGH THE PLATE:
+# (requires communication with the economy)
+# Allow owners to sell
+# their regions through the tablet.
+# Actual for creating apartments.
 ###
-# ФОРМА ОФОРМЛЕНИЯ ТАБЛИЧКИ:
-#   1 строка: sell region
-#   2 строка: <цена>
-#   3 строка:
-#   4 строка:
+# SHAPE FORM:
+# 1 line: sell region
+# 2 line: <price>
+# 3 line:
+# 4 line:
 ###
-# АКТИВИРОВАТЬ: true
-# ВЫКЛЮЧИТЬ:    false
+# ACTIVATE: true
+# SWITCH: false
 allow_sell: false
 ###
-# ПЛАТА ЗА СОЗДАНИЕ РЕГИОНА:
-# (требуется связь с экономикой)
-#   Установить обязательную плату для игроков
-#   без полного доступа за создание нового региона
-#   при помощи команды.
+# PAYMENT FOR THE CREATION OF THE REGION:
+# (requires communication with the economy)
+# Set a mandatory fee for players
+# without full access to create a new region
+# using the command.
 ###
-# РАЗРЕШИТЬ: true
-# ЗАПРЕТИТЬ: false
+# AUTHORIZED: true
+#BALD: false
 pay_for_region: false
 ###
-# ЦЕНА СОЗДАНИЯ НОВОГО РЕГИОНА:
-# (требуется разрешить параметр платы за регион)
-#   Установить цену за создание нового региона
-#   игрокам без полного доступа.
+# PRICE FOR THE CREATION OF A NEW REGION:
+# (you need to allow the payment option for the region)
+# Set the price for creating a new region
+# players without full access.
 price: 200
 
 
 ###
-# БЕЗОПАСНЫЙ РЕЖИМ:
-#   Запрещает игрокам без полного доступа
-#   ставить и ломать блоки, пока они
-#   находятся вне региона с разрешенным
-#   на то флагом, либо вне своего региона.
-#   Актуально для roleplay и minigames.
+# SAFE MODE:
+# Prevents players without full access
+# put and break blocks until they are
+# are outside the region with the allowed
+# on that flag, or outside your region.
+# Actual for roleplay and minigames.
 ###
-# АКТИВИРОВАТЬ: true
-# ВЫКЛЮЧИТЬ:    false
+# ACTIVATE: true
+# SWITCH: false
 safe_mode: false
 
 
 ###
-# РЕЖИМ РЕГИОНОВ ВО ВСЮ ВЫСОТУ:
-#   В этом режиме каждый новый регион
-#   будет создаваться без учета высоты
-#   (как чанк).
-#   Незнаю, нахрена кому-либо нужна эта фича,
-#   но создавать регионы с ней действительно
-#   удобно.
-# Обратите внимание, что в настройках размера
-# регионов вместо их объема в блоках будет
-# высчитываться площадь (без учета высоты).
+# REGION REGIME IN ALL HEIGHT:
+# In this mode, each new region
+# will be created without height
+# (like chunk).
+# Do not know, fuck someone need this feature,
+# but create regions with it really
+# conveniently.
+# Please note that in the size settings
+# of regions instead of their volume in blocks will be
+# calculate the area (without height).
 ###
-# АКТИВИРОВАТЬ: true
-# ВЫКЛЮЧИТЬ:    false
+# ACTIVATE: true
+# SWITCH: false
 full_height: false
 
 
 ###
-# ТИП ОПОВЕЩЕНИЯ:
-#   Способ оповещения игроков при
-#   запрете действий внутри регионов.
+# ALERT TYPE:
+# A way to notify players when
+# prohibition of actions within the regions.
 ###
-# POPUP:   0
+#POPUP: 0
 # MESSAGE: 1
-# TIP:     2
+# TIP: 2
 warn_type: 2
 
 
 ###
-# ФЛАГИ:
-#   Стандартные значения флагов
-#   при создании нового региона.
+# FLAGS:
+# Default flag values
+# when creating a new region.
 ###
-# INTERACT: открывание сундуков, нажатие кнопок и т.п.
-# TELEPORT: телепортация из региона.
-# EXPLODE:  любые взрывы внутри региона.
-# CHANGE:   изменение региона существами.
-# BUCKET:   использование ведер.
-# DAMAGE:   получение урона от внешнего мира.
-# CHEST:    доступ к сундукам.
-# PLACE:    возможность ставить блоки.
-# BREAK:    возможность ломать блоки.
-# SLEEP:    возможность ложиться в кровать.
-# DECAY:    разрешить исчезать листве с деревьев.
-# DROP:     возможность выбрасывать вещи.
-# CHAT:     отправка сообщений в чат.
-# PVP:      возможность наносить урон игрокам.
-# MOB:      возможность наносить урон существам.
+# INTERACT: opening chests, pressing buttons, etc.
+# TELEPORT: teleportation from the region.
+# EXPLODE: any explosions inside the region.
+# CHANGE: changing the region by creatures.
+# BUCKET: the use of buckets.
+# DAMAGE: Taking damage from the outside world.
+# CHEST: access to the chests.
+# PLACE: the ability to put blocks.
+#BREAK: the ability to break blocks.
+# SLEEP: the opportunity to go to bed.
+# DECAY: Allow the foliage to disappear from the trees.
+# DROP: the ability to throw things away.
+# CHAT: sending messages to the chat.
+# PVP: the ability to deal damage to players.
+# MOB: the ability to damage creatures.
 ###
-# Чтобы запретить игрокам использовать
-# какой-либо флаг, просто удалите или
-# закомментируйте его.
-# Но только после того, как создадите
-# нужные вам регионы (спавн, арена и т.д.)
-# (поставьте # перед пунктом)
+# To prohibit players from using
+# any flag, just delete it or
+# comment out it.
+# But only after you create
+# the regions you need (spawn, arena, etc.)
+# (put # before the item)
 ###
-# ВКЛЮЧИТЬ:  true
-# ВЫКЛЮЧИТЬ: false
+# ENABLE: true
+# SWITCH: false
 allowed_flag:
-  interact: true
-  teleport: true
-  explode: false
-  change: false
-  bucket: false
-  damage: true
-  chest: false
-  place: false
-  break: false
-  sleep: false
-  decay: true
-  drop: true
-  chat: true
-  pvp: false
-  mob: true
+  Interact: true
+  teleport: true
+  explode: false
+  change: false
+  bucket: false
+  damage: true
+  chest: false
+  place: false
+  break: false
+  sleep: false
+  decay: true
+  drop: true
+  chat: true
+  pvp: false
+  mob: true
