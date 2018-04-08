@@ -101,5 +101,90 @@ member_help: "§l§o§e --------- §fH ELP §e --------- §r \ n§l§e • §f /
 # {player} - added player
 member_add: "§l§a- §fGUARD §a- Player {player} added to region§r"
 #
-# {player} is the excluded player
-member_remove: "§l§c- §fGUARD §c- Player {player} is excluded from the
+- # {player} is the excluded player
+-member_remove: "§l§c- §fGUARD §c- Player {player} is excluded from region§r"
+-player_already_member: "§l§c- §fGUARD §c- The player is already a member of the region§r"
+- ###
+- # 5. / rg owner <region> <player>
+- ###
+- # owner_help: help with the command
+- # owner_change: the owner of the region has changed
+-owner_help: "§l§o§e --------- §fH ELP §e --------- §r \ n§l§e • §f / rg owner <region> <player> §7- § assign the owner§r \ n§l§e • §fFor security reasons, the number of owners§r \ n§l§e • §fNo region can not exceed 1 player§r \ n§l§e • §fWhen you choose a new owner, you will become a member of §§ \ n§l§o§ __________________________ §r "
+- #
+- # {player} - new owner of the region
+-owner_change: "§l§a- §fGUARD §a- {player} now owns the region§r"
+- ###
+- # 6. / rg pos [1,2]
+- ###
+- # pos_help: help with the command
+- # pos_1_set: position 1 is set
+- # pos_2_set: position 2 is set
+- # pos_another_world: positions in different worlds
+-pos_help: "§logo --------- §fH ELP §e --------- §r \ n§l§e • §f / rg pos [1, 2] §7- § set the position§r \ n§l§e • §f / rg pos1 §7- § set the position 1§r \ n§l§e • §f / rg pos2 §7- §fset position 2 §r \ n§lge • §fPoints must be located on opposite§r \ n§l§e • §fCuboid corners by drawing diagonal§r \ n§l§e • §fAfter setting the points, you will be able to create your own region§r \ n§l§o§e __________________________ §r "
+-pos_1_set: "§l§a- §fGUARD §a- Position 1. Set the position 2§r"
+-pos_2_set: "§l§a- §fGUARD §a- position 2 is set§r"
+-pos_another_world: "§l§c- §fGUARD §c- Positions are in different worlds§r"
+- ###
+- # 7. / rg remove <region>
+- ###
+- # remove_help: help with the command
+- # rg_remove: region deleted
+-remove_help: "§l§o§e --------- §fH ELP §e --------- §r \ n§l§e • §f / rg remove <region> §7- § Remove the region §r \ n§l§e • §fAfter the region is deleted, all participants§r \ n§l§e • §fLose their membership status§r \ n§l§o§e __________________________ §r "
+-rg_remove: "§g§a- §fGUARD §a- Region deleted§r"
+- ###
+- # 8. / rg wand
+- ###
+- # got_wand: an ax for selecting items
+- # inventory_oversize: inventory is full
+-got_wand: "§logo --------- §fH ELP §e --------- §r \ n§l§e • §fYou have received an ax for privat§r \ n§l§e • §fIt is sufficient to set the position§r \ n§l§e • §f Press the ax to the required block§r \ n§l§o§ __________________________ §r "
+-inventory_oversize: "§l§c- §fGUARD §c- Inventory overflowed§r"
+-
+-
+- ###
+- # INFORMATION ON THE REGION:
+- # {region} - the name of the region
+- # owner - owner of the region
+- # {member} - members of the region
+-rg_info: "§§§- §REGION §e- {region} | §e- §fORTER §e- {owner} §r \ n§l§e- §f PARTICIPANTS §e- {member}"
+-
+- ###
+- # TEXT SALES TEXT:
+- # {region} - the name of the region
+- # {price} - price
+-sell_text_1: "§l§eSubmitted region: §r"
+-sell_text_2: "§f {region}"
+-sell_text_3: "§l§ePrice: §r"
+-sell_text_4: "§f {price}"
+-
+-sell_exist: "§l§c- §fGUARD §c- A sales label for this region is already installed§r"
+-
+- ###
+- # MESSAGES ON THE PROHIBITION OF ACTION:
+- # warn_flag_interact: it is forbidden to click on anything
+- # warn_flag_teleport: it is forbidden to teleport
+- # warn_flag_bucket: it is forbidden to use buckets
+- # warn_flag_damage: no damage from the outside world
+- # warn_flag_chest: it is forbidden to open chests
+- # warn_flag_place: it is forbidden to put blocks
+- # warn_flag_break: it is forbidden to break blocks
+- # warn_flag_sleep: it is forbidden to go to bed
+- # warn_flag_drop: it's forbidden to throw things away
+- # warn_flag_chat: Do not send chat messages
+- # warn_flag_pvp: it is forbidden to fight with players
+- # warn_flag_mob: it is forbidden to fight with mobs
+- # warn_safe_mode: forbidden to change the world
+-warn_flag_interact: ""
+-warn_flag_teleport: "§l§c- §fGUARD §c- Teleportation in this region is limited to§r"
+-warn_flag_bucket: "§l§c- §fGUARD §c- Using buckets in a given region is limited to§r"
+-warn_flag_damage: ""
+-warn_flag_chest: "§l§c- §fGUARD §c- The use of chests in a given region is limited to§r"
+-warn_flag_place: "§l§c- §fGUARD §c- Construction in this region is limited to§r"
+-warn_flag_break: "§l§c- §fGUARD §c- Construction in this region is limited to§r"
+-warn_flag_sleep: "§l§c- §fGUARD §c- Using beds in this region is limited to§r"
+-warn_flag_drop: "§l§c- §fGUARD §c- Throwing things out in a given region is limited to§r"
+-warn_flag_chat: "§l§c- §fGUARD §c- Sending messages in this region is limited to§r"
+-warn_flag_pvp: "§l§c- §fGUARD §c- PvP in this region is limited to§r"
+-warn_flag_mob: "§l§c- §fGUARD §c- Damage to mobs in this region is turned off§r"
+-warn_safe_mode: "§l§c- §fGUARD §c- Changing the world outside the regions is forbidden§r"
+ # {player} is the excluded player
+ member_remove: "§l§c- §fGUARD §c- Player {player} is excluded from the
